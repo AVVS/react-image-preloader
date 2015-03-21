@@ -1,0 +1,27 @@
+{
+  "name": "react-image-preloader",
+  "version": "1.0.0",
+  "description": "Displays image placeholder before the required image has loaded",
+  "main": "./lib/imagePreloader.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AVVS/react-image-preloader.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "preloader"
+  ],
+  "author": "Vitaly Aminev <v@aminev.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AVVS/react-image-preloader/issues"
+  },
+  "homepage": "https://github.com/AVVS/react-image-preloader",
+  "devDependencies": {
+    "react": "^0.13.1"
+  }
+}
