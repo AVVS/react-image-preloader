@@ -1,6 +1,6 @@
 {
   "name": "react-image-preloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Displays image placeholder before the required image has loaded",
   "main": "./lib/imagePreloader.jsx",
   "scripts": {
@@ -21,6 +21,10 @@
     "url": "https://github.com/AVVS/react-image-preloader/issues"
   },
   "homepage": "https://github.com/AVVS/react-image-preloader",
+  "dependencies": {},
+  "browserify": {
+      "transform": ["reactify"]
+  },
   "devDependencies": {
     "react": "^0.13.1"
   }
