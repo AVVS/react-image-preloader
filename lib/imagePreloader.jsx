@@ -40,21 +40,27 @@ var ImagePreloader = React.createClass({
         // set src
         image.src = props.src;
 
+        // make sure the load event fires for cached images too
+        if (image.complete || image.complete === undefined) {
+            image.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+            image.src = props.src;
+        }
+
         this.setState({ image: image });
     },
 
-    componentDidMount: function() {
+    componentDidMount: function () {
         this.resolveImage();
     },
 
-    onLoad: function() {
+    onLoad: function () {
         if (this.isMounted()) {
             resolveImageCache[this.props.src] = true;
             this.setState({ hasLoaded: true });
         }
     },
 
-    onError: function(err) {
+    onError: function (err) {
         if (this.isMounted()) {
             resolveImageCache[this.props.src] = false;
             this.setState({ hasLoaded: false });

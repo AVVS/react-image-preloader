@@ -1,6 +1,6 @@
 {
   "name": "react-image-preloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Displays image placeholder before the required image has loaded",
   "main": "./lib/imagePreloader.jsx",
   "scripts": {
