@@ -79,6 +79,7 @@ var ImagePreloader = React.createClass({
 
     render: function () {
         return (<img
+					style={this.props.style}
                     className={this.props.className || ''}
                     src={this.state.hasLoaded ? this.props.src : this.props.fallback}
                 />);
